@@ -1,0 +1,19 @@
+{
+  "name": "photogallery-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "rm -rf _site && mkdir _site && postcss css/tailwind.css -o _site/css/tailwind.css && eleventy --serve --quiet",
+    "build": "rm -rf _site && eleventy && postcss css/tailwind.css -o _site/css/tailwind.css"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.4.0",
+    "axios": "^0.24.0",
+    "eleventy-plugin-error-overlay": "^0.1.2",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  }
+}
